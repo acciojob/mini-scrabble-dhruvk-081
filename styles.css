@@ -1,2 +1,53 @@
-
-/* Your CSS Code here. */
+body {
+    box-sizing: border-box;
+    background: black;
+  }
+  
+  h1,
+  h3,
+  footer {
+    text-align: center;
+    color: #fff;
+  }
+  h3{
+      display: inline;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 18em;
+  }
+  
+  textarea {
+    height: 50vh;
+    min-width: 80%;
+    padding: 1em;
+  }
+  
+  #container span {
+    color: white;
+    font-weight: bold;
+    margin: 15px;
+  }
+  footer {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border: 2px solid;
+    animation: animate 8s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  
